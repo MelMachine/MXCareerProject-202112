@@ -21,11 +21,12 @@ class Solution(object):
             left = self.lowestCommonAncestor(root.left, p, q)
             right = self.lowestCommonAncestor(root.right, p, q)
             
-            if left and right: #一个在左子树，一个在右子树
+            if left and right: 
                 return root
-            elif left:#都在左子树
+            elif left:
                 return left
-            elif right:#都在右子树
+             
+            elif right:
                 return right
             else:
                 return
